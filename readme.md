@@ -30,14 +30,14 @@ This project allows users to generate secure random passwords with customizable 
 
 ## 📂 Project Structure
 
+```
 Password-Generator/
 │
 ├── index.html
 ├── index.css
 ├── index.js
 └── README.md
-
----
+```
 
 ## 📸 How It Works
 
