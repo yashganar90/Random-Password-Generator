@@ -1,0 +1,116 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #1f2937;
+  width: 550px;
+  height: 550px;
+  padding: 60px;
+  color: white;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+h1 span {
+  color: #4adf86;
+}
+
+p {
+  margin-top: 15px;
+  color: #d5d4d8;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 40px;
+  background-color: #10b981;
+  border: none;
+  padding: 12px 18px;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+hr {
+  margin: 40px 0;
+  border: 1px solid #2f3e53;
+}
+
+.passwords {
+  display: flex;
+  justify-content: space-between;
+}
+
+.password-box {
+  background-color: #273549;
+  width: 210px;
+  height: 40px;
+  border-radius: 6px;
+  color: #55f991;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.controls {
+  margin-top: 25px;
+}
+
+.controls label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.options {
+  margin-top: 10px;
+}
+
+.password-box {
+  cursor: pointer;
+}
+
+.copy-notification {
+  position: fixed;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #10b981;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.copy-notification.show {
+  opacity: 1;
+}
+
+.error-notification {
+  background-color: #ff6b6b;
+}

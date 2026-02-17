@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>
+        Generate a <br />
+        <span>random password</span>
+      </h1>
+
+      <p>Never use an insecure password again.</p>
+
+      <div class="controls">
+        <label>
+          Password length:
+          <input type="number" id="length-input" min="1" max="15" value="15" />
+        </label>
+
+        <div class="options">
+          <label>
+            <input type="checkbox" id="include-letters" checked />
+            Letters
+          </label>
+
+          <label>
+            <input type="checkbox" id="include-numbers" checked />
+            Numbers
+          </label>
+
+          <label>
+            <input type="checkbox" id="include-symbols" checked />
+            Symbols
+          </label>
+        </div>
+      </div>
+
+      <button id="generate-btn">Generate passwords</button>
+
+      <hr />
+
+      <div class="passwords">
+        <div class="password-box" id="password-one"></div>
+        <div class="password-box" id="password-two"></div>
+      </div>
+    </div>
+    <div id="copy-notification" class="copy-notification">Copied!</div>
+    <div id="length-error" class="copy-notification error-notification">
+      Max length is 15
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
